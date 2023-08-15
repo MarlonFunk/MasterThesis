@@ -13,9 +13,9 @@ use rand::distributions::WeightedIndex;
 // static mut WHISK_AUTH: String = String::new();
 
 // Constants for the test conditions
-const ABORT_AFTER: usize = 3;
+const ABORT_AFTER: usize = 15;
 const INCREASE_AFTER: u128 = 5000;
-const ABORT_SCRIPT: u128 = 60000; //600000;
+// const ABORT_SCRIPT: u128 = 20000; //600000;
 
 // Function to make a request to the server
 // pub fn make_request(body: surf::Body) -> impl Future<Output = Result<Value, surf::Error>> {
@@ -55,7 +55,7 @@ pub struct ConcurrencyResult {
 }
 
 // Asynchronous function to perform a concurrency test with varying numbers of concurrent requests
-pub async fn concurrency_test<F>(first_action_name: &str, second_action_name: &str, param: F) -> Value
+pub async fn concurrency_test_mixed<F>(first_action_name: &str, second_action_name: &str, param: F) -> Value
 where
     F: Fn() -> Value,
 {
@@ -154,10 +154,11 @@ where
         }
     }
     // Create vectors to hold the responses and concurrency test results
-    let mut responses = Vec::with_capacity(10 * 3 * 10);
-    let mut concurrency_results = Vec::with_capacity(10);
+    let mut responses = Vec::with_capacity(ABORT_AFTER * 3 * ABORT_AFTER);
+    let mut concurrency_results = Vec::with_capacity(ABORT_AFTER);
 
-    let start_time = std::time::Instant::now();
+    let mut num_added = 1;
+    let mut last_added = std::time::Instant::now();
 
     // Loop until there are no more responses from the FuturesUnordered stream
     while let Some(res) = futures.next().await {
@@ -166,32 +167,61 @@ where
             Err(err) => eprintln!("Err: {:?}", err).await, // Print errors for failed requests
         }
 
-        if start_time.elapsed().as_millis() > ABORT_SCRIPT {
+        // if start_time.elapsed().as_millis() > ABORT_SCRIPT {
+        //     // Check if the time since the last addition exceeds the threshold to increase concurrent requests
+        //     // Store the concurrency test result for the current number of concurrent requests
+        //     concurrency_results.push(ConcurrencyResult {
+        //         no_concurrent_requests: 10,
+        //         responses,
+        //     });
+        //     eprintln!("Aborting after {} miliseconds", ABORT_SCRIPT).await;
+        //     break;          
+        // }
+        // eprintln!("{}", serde_json::to_value(responses.to_vec()).unwrap());
+
+        // Check if the maximum number of added requests is reached
+        if num_added > ABORT_AFTER {
+            eprintln!("Aborting after {} additions", num_added).await;
+            break; // Stop the test if the maximum number of requests is reached
+        } else if last_added.elapsed().as_millis() > INCREASE_AFTER {
             // Check if the time since the last addition exceeds the threshold to increase concurrent requests
             // Store the concurrency test result for the current number of concurrent requests
             concurrency_results.push(ConcurrencyResult {
-                no_concurrent_requests: 10,
+                no_concurrent_requests: num_added,
                 responses,
             });
-            eprintln!("Aborting after {} miliseconds", ABORT_SCRIPT).await;
-            break;          
+            responses = Vec::with_capacity(ABORT_AFTER); // Clear the responses for the next batch
+            random_index = distribution.sample(&mut rng);
+            match random_index {
+                0 => {
+                    futures.push(make_request(&first_path, &auth));    
+                }
+                1 => {
+                    futures.push(make_request(&second_path, &auth));          
+                }
+                _ => {
+                    panic!("Unexpected value for var: {}", random_index);
+                }
+            }           
+            
+            last_added = std::time::Instant::now(); // Update the last added time
+            num_added += 1; // Increment the number of added requests
+            eprintln!("Issuing {} concurrent requests", num_added).await;
         }
-        eprintln!("{}", serde_json::to_value(responses.to_vec()).unwrap());
-
         random_index = distribution.sample(&mut rng);
         match random_index {
             0 => {
                 futures.push(make_request(&first_path, &auth));    
             }
             1 => {
-                futures.push(make_request(&second_path, &auth));    
+                futures.push(make_request(&second_path, &auth));          
             }
             _ => {
                 panic!("Unexpected value for var: {}", random_index);
             }
         }           
-        
     }
     // Serialize and return the concurrency test results
     serde_json::to_value(concurrency_results).unwrap()
+    
 }

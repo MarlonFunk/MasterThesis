@@ -10,12 +10,7 @@ async fn main() -> anyhow::Result<()> {
     // })
     // .await;
 
-    // let responses = concurrency_test("sleep", || {
-    //     json!({
-    //         "input": "3",
-    //     })
-    // })
-    // .await;
+
     let responses = concurrency_test("hash", || {
         let random = rand::random::<i64>();
         json!({

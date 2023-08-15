@@ -1,4 +1,4 @@
-use ow_evaluation::concurrency_mixed::concurrency_test;
+use ow_evaluation::concurrency_mixed::concurrency_test_mixed;
 use serde_json::json;
 
 #[async_std::main]
@@ -16,7 +16,7 @@ async fn main() -> anyhow::Result<()> {
     //     })
     // })
     // .await;
-    let responses = concurrency_test("net", "prime",|| {
+    let responses = concurrency_test_mixed("net", "prime",|| {
         json!({})
     })
     .await;

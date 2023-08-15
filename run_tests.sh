@@ -42,6 +42,7 @@ else
     if [ "$5" -eq 1 ]; then
       echo "Starting measurment of resources!"
       /home/m/Documents/MasterTGN/MasterThesis/results/measure_resources.sh&
+      measure_resources_pid=$(pgrep -f "measure_resources.sh")
     fi
 fi
 
@@ -101,7 +102,7 @@ elif [ "$platform" == "docker" ]; then
 fi
 
 if [ "$testtype" == "cold-start" ]; then
-    for (( i=1; i<=10; i++ )); do
+    for (( i=0; i<=30; i++ )); do
         functionname="hello""$i"
         
         action_source_path="$action_source_folder""$action_binary"
@@ -112,10 +113,11 @@ if [ "$testtype" == "cold-start" ]; then
         fi 
     done
 
-    # for (( i=1; i<=10; i++ )); do
+    for (( i=1; i<=10; i++ )); do
     #TODO: In case of cold start additional sleep after one iteration
-      /home/m/Documents/MasterTGN/MasterThesis/binaries/cold-start-test-hello-"$platform" | tee -a /home/m/Documents/MasterTGN/MasterThesis/results/1_"$platform"_cold_start.log
-    # done
+      /home/m/Documents/MasterTGN/MasterThesis/binaries/cold-start-test | tee -a /home/m/Documents/MasterTGN/MasterThesis/results/1_"$platform"_cold_start.log
+      sleep 25
+    done
     # Read JSON data from file and calculate the sum of initTime and waitTime for each activationId
     cat 1_"$platform"_cold_start.log | jq -r '.[] | .no_concurrent_requests as $numResponses | .responses[] | .activationId as $activationId | .annotations[] | select(.key == "initTime" or .key == "waitTime") | "\($numResponses) \($activationId) \(.value)"' |
     awk '
@@ -169,13 +171,13 @@ elif [ "$testtype" == "concurrency" ]; then
             fi 
             wsk action invoke --blocking $functionname
         done
-        result_file_1="/home/m/Documents/MasterTGN/MasterThesis/results/1_"$platform"_concurrency_mixed.log "
-        result_file_2="/home/m/Documents/MasterTGN/MasterThesis/results/2_"$platform"_concurrency_mixed.log "
+        result_file_1="/home/m/Documents/MasterTGN/MasterThesis/results/1_"$platform"_concurrency_mixed.log"
+        result_file_2="/home/m/Documents/MasterTGN/MasterThesis/results/2_"$platform"_concurrency_mixed.log"
         # /home/m/Documents/MasterTGN/MasterThesis/binaries/concurrency-test-mixed-"$platform" | tee -a "$result_file_1" 
         
-        # for (( i=1; i<=10; i++ )); do
+        for (( i=1; i<=10; i++ )); do
           /home/m/Documents/MasterTGN/MasterThesis/binaries/concurrency-test-mixed | tee -a "$result_file_1" 
-        # done
+        done
     else #Not with mixed load
       if [ "$create_load" == "hash" ]; then
           functionname="hash"
@@ -185,8 +187,8 @@ elif [ "$testtype" == "concurrency" ]; then
           functionname="hello"
           action_invoke_parameter="--param input there"
       fi
-          result_file_1="/home/m/Documents/MasterTGN/MasterThesis/results/1_"$platform"_concurrency_"$functionname".log "
-          result_file_2="/home/m/Documents/MasterTGN/MasterThesis/results/2_"$platform"_concurrency_"$functionname".log "
+          result_file_1="/home/m/Documents/MasterTGN/MasterThesis/results/1_"$platform"_concurrency_"$functionname".log"
+          result_file_2="/home/m/Documents/MasterTGN/MasterThesis/results/2_"$platform"_concurrency_"$functionname".log"
           action_source_path="$action_source_folder""$action_binary"
           wsk action delete $functionname
           wsk action create $action_create_parameter $functionname $action_source_path  
@@ -195,15 +197,15 @@ elif [ "$testtype" == "concurrency" ]; then
           fi 
           wsk action invoke --blocking $functionname $action_invoke_parameter
 
-          # for (( i=1; i<=10; i++ )); do
+          for (( i=1; i<=10; i++ )); do
             # /home/m/Documents/MasterTGN/MasterThesis/binaries/concurrency-test-"$functionname"-"$platform" | tee -a "$result_file_1"
            /home/m/Documents/MasterTGN/MasterThesis/binaries/concurrency-test-"$functionname" | tee -a "$result_file_1"
 
-          # done
+          done
     fi
       
 
-    cat "$result_file_1" | jq -r '.[] | .no_concurrent_requests as $numRequests | .responses[].annotations[] | select(.key == "waitTime") | [$numRequests, .value] | @tsv' data.json | awk '
+    cat "$result_file_1" | jq -r '.[] | .no_concurrent_requests as $numRequests | .responses[].annotations[] | select(.key == "waitTime") | [$numRequests, .value] | @tsv' | awk '
     {
       numRequests = $1;
       waitTime = $2;
@@ -218,12 +220,10 @@ elif [ "$testtype" == "concurrency" ]; then
     ' >> "$result_file_2"
 
 
-
-
   ###########################################
 
     activation_id_count=$(jq '.[].responses[].activationId' "$result_file_1"| sort -u | wc -l)
-    success_count=$(jq '.[].responses[] | select(.response.result.status == "success" and .response.result.status_code == 0 and .response.result.success == true) | .response.success' "$result_file_1" | grep -c "true")
+    success_count=$(jq '.[].responses[] | select(.response.status == "success" and .response.success == true) | .response.success' "$result_file_1" | grep -c "true")
     echo "activations: "$activation_id_count""
     echo "sucessfull: "$success_count""
   ########################################### 
@@ -245,26 +245,32 @@ elif [ "$testtype" == "capacity" ]; then
     # for (( i=1; i<=10; i++ )); do
       /home/m/Documents/MasterTGN/MasterThesis/binaries/capacity-test |  tee -a /home/m/Documents/MasterTGN/MasterThesis/results/1_"$platform"_capacity.log
     # done
-  cat 1_"$platform"_capacity.log | jq -r '.[] | .no_concurrent_requests as $numRequests | .responses[].annotations[] | select(.key == "waitTime") | [$numRequests, .value] | @tsv' data.json | awk '
-  {
-    numRequests = $1;
-    waitTime = $2;
-    waitTimes[numRequests] = waitTimes[numRequests] ", " waitTime;
-  }
-  
-  END {
-    for (numRequests in waitTimes) {
-      printf("%d: %s\n", numRequests, waitTimes[numRequests]);
+  cat 1_"$platform"_capacity.log | jq -r '.[] | .no_concurrent_requests as $numRequests | .responses[].annotations[] | select(.key == "waitTime") | [$numRequests, .value] | @tsv' | awk '
+    {
+      numRequests = $1;
+      waitTime = $2;
+      waitTimes[numRequests] = waitTimes[numRequests] ", " waitTime;
     }
-  }
+
+    END {
+      for (numRequests in waitTimes) {
+        printf("%d: %s\n", numRequests, waitTimes[numRequests]);
+      }
+    }
 ' >> 2_"$platform"_capacity.log
 
 
   # Count occurrences of the specific response fields
+  success_count=0
+  activation_id_count=0
 
-  success_count=$(jq '.[].responses[] | select(.response.result.status == "success" and .response.result.status_code == 0 and .response.result.success == true) | .response.success' 1_"$platform"_capacity.log | grep -c "true")
-  activation_id_count=$(jq '.[].responses[].activationId' 1_"$platform"_capacity.log| sort -u | wc -l)
-
+  if [ "$platform" == "docker" ]; then
+    success_count=$(jq '.[].responses[] | select(.response.status == "success" and .response.success == true) | .response.success' "$result_file_1" | grep -c "true")
+ñ    activation_id_count=$(jq '.[].responses[].activationId' 1_"$platform"_capacity.log| sort -u | wc -l)
+  else
+    success_count=$(jq '.[].responses[] | select(.response.result.status == "success" and .response.result.status_code == 0 and .response.result.success == true) | .response.success' 1_"$platform"_capacity.log | grep -c "true")
+    activation_id_count=$(jq '.[].responses[].activationId' 1_"$platform"_capacity.log| sort -u | wc -l)
+  fi
   # echo "Occurrences of success response: $success_count"
   # echo "Number of unique activationId: $activation_id_count"
   percentage=$((( $success_count / $activation_id_count ) *100))
@@ -276,8 +282,9 @@ else
   echo "Wrong testtype!"
 fi
 
-
-
+if [ "$5" -eq 1 ]; then
+  kill "$measure_resources_pid"
+fi
 
 # ## Docker - cold start
 # # docker - test/hello.go

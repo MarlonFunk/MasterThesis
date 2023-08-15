@@ -7,7 +7,9 @@ use serde::Serialize;
 use serde_json::Value;
 
 // A constant that defines the maximum number of concurrent requests to test
-const ABORT_AFTER: usize = 11;
+const ABORT_AFTER: usize = 15;
+const START_WITH: usize = 1;
+
 
 // Function to create and send a request to the server
 pub fn make_request(
@@ -93,7 +95,7 @@ where
     let mut cold_start_results = Vec::with_capacity(ABORT_AFTER);
 
     // Loop through different numbers of concurrent requests
-    for i in 1..ABORT_AFTER {
+    for i in START_WITH..ABORT_AFTER {
         let mut futures = make_concurrent_requests(i, action_name, &auth, &mut param); // Create concurrent requests
 
         let mut responses = Vec::with_capacity(ABORT_AFTER * 3 * ABORT_AFTER);
