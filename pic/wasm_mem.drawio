@@ -1,0 +1,98 @@
+<mxfile host="app.diagrams.net" modified="2023-08-25T11:25:26.374Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0" etag="4IU1kmLujRn_MCTBNt7v" version="21.6.9" type="device">
+  <diagram name="Page-1" id="NPdxOVg39RHTMsn7cIoY">
+    <mxGraphModel dx="1434" dy="733" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-1" value="Stack" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="200" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-2" value="Heap" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="200" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-3" value="Data" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="190" y="200" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-4" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="260" as="sourcePoint" />
+            <mxPoint x="190" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-5" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="260" as="sourcePoint" />
+            <mxPoint x="290" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-6" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="260" as="sourcePoint" />
+            <mxPoint x="450" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-7" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="260" as="sourcePoint" />
+            <mxPoint x="550" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-8" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#FFF7F7;labelBackgroundColor=default;labelBorderColor=#FFFFFF;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="214.5" as="sourcePoint" />
+            <mxPoint x="590" y="214.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-9" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="214.5" as="sourcePoint" />
+            <mxPoint x="320" y="214.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-10" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" edge="1" parent="1" target="6mIaMhVBm2-mYnevaMx7-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="200" as="sourcePoint" />
+            <mxPoint x="340" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-11" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="229" as="sourcePoint" />
+            <mxPoint x="350" y="229" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-12" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="200" as="sourcePoint" />
+            <mxPoint x="550" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="200" />
+              <mxPoint x="650" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-13" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="260" as="sourcePoint" />
+            <mxPoint x="650" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-14" value="0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-19" value="mem_max" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-20" value="__heap_end" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-21" value="__heap_base" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6mIaMhVBm2-mYnevaMx7-22" value="__data_end" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

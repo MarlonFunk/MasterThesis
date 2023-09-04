@@ -1,0 +1,80 @@
+## Manual copied results from command line
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_wasm_concurrency_hello.log
+Mean: 3.987884275427931
+Standard Deviation: 2.588273369304624
+CoV: 64.90\%
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_docker_concurrency_hello.log
+Mean: 4.571155247813411
+Standard Deviation: 3.8969322865014497
+CoV: 85.25\%
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_wasm_concurrency_hash.log
+Mean: 0.8732676892099062
+Standard Deviation: 1.696279783016778
+CoV: 194.25\%
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_docker_concurrency_hash.log
+Mean: 7.394122953988916
+Standard Deviation: 8.311104905575188
+CoV: 112.40\%
+
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_docker_concurrency_mixed_1_9.log
+Mean: 2.3321736803371915
+Standard Deviation: 10.326456151068292
+CoV: 442.78\%
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_wasm_concurrency_mixed_1_9.log
+Mean: 1.0151154487026899
+Standard Deviation: 2.9570656277191874
+CoV: 291.30\%
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_wasm_concurrency_mixed_25_75.log
+Mean: 1.058209554395825
+Standard Deviation: 2.792543234692796
+CoV: 263.89\%
+
+
+
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_docker_concurrency_mixed_25_75.log
+Mean: 2.380695478801384
+Standard Deviation: 10.1648769980671
+CoV: 426.97\%
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_wasm_concurrency_mixed_5_5.log
+Mean: 1.0073073516386182
+Standard Deviation: 2.3005030927580763
+CoV: 228.38\%
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_docker_concurrency_mixed_5_5.log
+Mean: 2.1933301641861997
+Standard Deviation: 7.6389120332218585
+CoV: 348.28\%
+
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_wasm_concurrency_mixed_75_25.log
+Mean: 0.8731375747688961
+Standard Deviation: 1.9149540301457055
+CoV: 219.32\%
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_docker_concurrency_mixed_75_25.log
+Mean: 1.8612227727400206
+Standard Deviation: 5.346360767014646
+CoV: 287.25\%
+
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_docker_concurrency_mixed_9_1.log
+Mean: 1.701332773638367
+Standard Deviation: 4.233367112750875
+CoV: 248.83\%
+
+
+
+
+/home/m/Documents/MasterTGN/MasterThesis/results/final (copy)/CoV/4_wasm_concurrency_mixed_9_1.log
+Mean: 0.7936258613700852
+Standard Deviation: 0.9309467455206872
+CoV: 117.30\%
+

@@ -1,0 +1,850 @@
+Listening on: 127.0.0.1:9000
+/init sleep
+Initializing container with id 7d2e707d-b92e-45cd-845e-45de7e57a5d4
+base64 decoding took 0 ms
+/run /guest/sleep
+Running container with id 7d2e707d-b92e-45cd-845e-45de7e57a5d4
+timestamp_clone: 0ms
+timestamp_wasi: 568ms
+timestamp_module: 166ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5005)})))
+Removing container with id 7d2e707d-b92e-45cd-845e-45de7e57a5d4
+/init sleep
+Initializing container with id ad516c42-6562-4f5f-9405-8210fa455296
+base64 decoding took 0 ms
+/run /guest/sleep
+Running container with id ad516c42-6562-4f5f-9405-8210fa455296
+timestamp_clone: 0ms
+timestamp_wasi: 106ms
+timestamp_module: 129ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5004)})))
+/run /guest/sleep
+Running container with id ad516c42-6562-4f5f-9405-8210fa455296
+timestamp_clone: 0ms
+timestamp_wasi: 115ms
+timestamp_module: 144ms
+/init sleep
+Initializing container with id 8127f31d-2d05-4dd6-bd69-98fa595fa3d6
+base64 decoding took 0 ms
+/run /guest/sleep
+Running container with id 8127f31d-2d05-4dd6-bd69-98fa595fa3d6
+timestamp_clone: 0ms
+timestamp_wasi: 152ms
+timestamp_module: 185ms
+/init sleep
+Initializing container with id 40082d5c-6b7a-491e-8b84-e7ba1a7e2dbe
+base64 decoding took 0 ms
+/run /guest/sleep
+Running container with id 40082d5c-6b7a-491e-8b84-e7ba1a7e2dbe
+timestamp_clone: 0ms
+timestamp_wasi: 150ms
+timestamp_module: 177ms
+/init sleep
+Initializing container with id 87b49243-4148-4fb0-a72a-7d88fa2a3141
+base64 decoding took 0 ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5005)})))
+/run /guest/sleep
+Running container with id 87b49243-4148-4fb0-a72a-7d88fa2a3141
+timestamp_clone: 0ms
+timestamp_wasi: 196ms
+timestamp_module: 202ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5002)})))
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5005)})))
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5001)})))
+Removing container with id ad516c42-6562-4f5f-9405-8210fa455296
+/run /guest/sleep
+Running container with id 8127f31d-2d05-4dd6-bd69-98fa595fa3d6
+timestamp_clone: 0ms
+timestamp_wasi: 126ms
+timestamp_module: 199ms
+/run /guest/sleep
+Running container with id 40082d5c-6b7a-491e-8b84-e7ba1a7e2dbe
+timestamp_clone: 0ms
+timestamp_wasi: 119ms
+timestamp_module: 177ms
+/run /guest/sleep
+Running container with id 87b49243-4148-4fb0-a72a-7d88fa2a3141
+timestamp_clone: 0ms
+timestamp_wasi: 175ms
+timestamp_module: 189ms
+/init sleep
+Initializing container with id e63bfbfd-bf5b-4ee9-8d65-23ee44eb3506
+base64 decoding took 0 ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5005)})))
+/run /guest/sleep
+Running container with id e63bfbfd-bf5b-4ee9-8d65-23ee44eb3506
+timestamp_clone: 0ms
+timestamp_wasi: 199ms
+timestamp_module: 202ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5005)})))
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5004)})))
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5005)})))
+Removing container with id 8127f31d-2d05-4dd6-bd69-98fa595fa3d6
+Removing container with id 40082d5c-6b7a-491e-8b84-e7ba1a7e2dbe
+Removing container with id 87b49243-4148-4fb0-a72a-7d88fa2a3141
+/run /guest/sleep
+Running container with id e63bfbfd-bf5b-4ee9-8d65-23ee44eb3506
+timestamp_clone: 0ms
+timestamp_wasi: 124ms
+timestamp_module: 151ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5005)})))
+Removing container with id e63bfbfd-bf5b-4ee9-8d65-23ee44eb3506
+/init hash
+Initializing container with id 497d496c-d7e8-4c76-b425-72ae9dff2627
+base64 decoding took 0 ms
+/run /guest/hash
+Running container with id 497d496c-d7e8-4c76-b425-72ae9dff2627
+timestamp_clone: 0ms
+timestamp_wasi: 109ms
+timestamp_module: 128ms
+Wasm Execution returned Err(wasm trap: unreachable
+wasm backtrace:
+    0: 0x12156 - <unknown>!<wasm function 133>
+    1: 0x35c2 - <unknown>!<wasm function 24>
+    2: 0x6695 - <unknown>!<wasm function 34>
+    3: 0x1947 - <unknown>!<wasm function 12>
+    4: 0x770e - <unknown>!<wasm function 40>
+    5:  0x34c - <unknown>!<wasm function 6>
+note: run with `WASMTIME_BACKTRACE_DETAILS=1` environment variable to display more information
+)
+Removing container with id 497d496c-d7e8-4c76-b425-72ae9dff2627
+/init hash
+Initializing container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+base64 decoding took 0 ms
+/run /guest/hash
+Running container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+timestamp_clone: 0ms
+timestamp_wasi: 107ms
+timestamp_module: 123ms
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+/run /guest/hash
+Running container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+timestamp_clone: 0ms
+timestamp_wasi: 108ms
+timestamp_module: 127ms
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+/run /guest/hash
+Running container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+timestamp_clone: 0ms
+timestamp_wasi: 111ms
+timestamp_module: 145ms
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+/run /guest/hash
+Running container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+timestamp_clone: 0ms
+timestamp_wasi: 112ms
+timestamp_module: 225ms
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+/run /guest/hash
+Running container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+timestamp_clone: 0ms
+timestamp_wasi: 260ms
+timestamp_module: 164ms
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+/run /guest/hash
+Running container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+timestamp_clone: 0ms
+timestamp_wasi: 114ms
+timestamp_module: 126ms
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+/run /guest/hash
+Running container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+timestamp_clone: 0ms
+timestamp_wasi: 109ms
+timestamp_module: 133ms
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+/run /guest/hash
+Running container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+timestamp_clone: 0ms
+timestamp_wasi: 118ms
+timestamp_module: 133ms
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+/run /guest/hash
+Running container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+timestamp_clone: 0ms
+timestamp_wasi: 114ms
+timestamp_module: 107ms
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+/run /guest/hash
+Running container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+timestamp_clone: 0ms
+timestamp_wasi: 243ms
+timestamp_module: 157ms
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+Removing container with id 1382c782-2cf8-4cda-b9b3-731354cf7969
+/init hello
+Initializing container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+base64 decoding took 0 ms
+/run /guest/hello
+Running container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+timestamp_clone: 0ms
+timestamp_wasi: 175ms
+timestamp_module: 239ms
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+/run /guest/hello
+Running container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+timestamp_clone: 0ms
+timestamp_wasi: 187ms
+timestamp_module: 241ms
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+/run /guest/hello
+Running container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+timestamp_clone: 0ms
+timestamp_wasi: 105ms
+timestamp_module: 150ms
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+/run /guest/hello
+Running container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+timestamp_clone: 0ms
+timestamp_wasi: 436ms
+timestamp_module: 244ms
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+/run /guest/hello
+Running container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+timestamp_clone: 0ms
+timestamp_wasi: 177ms
+timestamp_module: 243ms
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+/run /guest/hello
+Running container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+timestamp_clone: 0ms
+timestamp_wasi: 121ms
+timestamp_module: 144ms
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+/run /guest/hello
+Running container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+timestamp_clone: 0ms
+timestamp_wasi: 244ms
+timestamp_module: 245ms
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+/run /guest/hello
+Running container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+timestamp_clone: 0ms
+timestamp_wasi: 107ms
+timestamp_module: 156ms
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+/run /guest/hello
+Running container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+timestamp_clone: 0ms
+timestamp_wasi: 149ms
+timestamp_module: 151ms
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+/run /guest/hello
+Running container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+timestamp_clone: 0ms
+timestamp_wasi: 119ms
+timestamp_module: 165ms
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+/run /guest/hello
+Running container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+timestamp_clone: 0ms
+timestamp_wasi: 120ms
+timestamp_module: 268ms
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+Removing container with id 93de602a-5613-47e7-9dd8-fb9a68037885
+/init net
+Initializing container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+base64 decoding took 0 ms
+/run /guest/net
+Running container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+timestamp_clone: 0ms
+timestamp_wasi: 113ms
+timestamp_module: 113ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+/run /guest/net
+Running container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+timestamp_clone: 0ms
+timestamp_wasi: 275ms
+timestamp_module: 173ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+/run /guest/net
+Running container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+timestamp_clone: 0ms
+timestamp_wasi: 174ms
+timestamp_module: 179ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+/run /guest/net
+Running container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+timestamp_clone: 0ms
+timestamp_wasi: 214ms
+timestamp_module: 179ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+/run /guest/net
+Running container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+timestamp_clone: 0ms
+timestamp_wasi: 127ms
+timestamp_module: 141ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+/run /guest/net
+Running container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+timestamp_clone: 0ms
+timestamp_wasi: 116ms
+timestamp_module: 118ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+/run /guest/net
+Running container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+timestamp_clone: 0ms
+timestamp_wasi: 115ms
+timestamp_module: 143ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+/run /guest/net
+Running container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+timestamp_clone: 0ms
+timestamp_wasi: 121ms
+timestamp_module: 159ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+/run /guest/net
+Running container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+timestamp_clone: 0ms
+timestamp_wasi: 111ms
+timestamp_module: 118ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+/run /guest/net
+Running container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+timestamp_clone: 0ms
+timestamp_wasi: 125ms
+timestamp_module: 171ms
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+/init prime
+Initializing container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+base64 decoding took 0 ms
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 112ms
+timestamp_module: 130ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(236), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 128ms
+timestamp_module: 157ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(239), "prime": Number(373587911)})))
+Removing container with id 3fe6a21e-e6c2-4f94-ae26-f5f4861ac4d0
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 148ms
+timestamp_module: 147ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(239), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 110ms
+timestamp_module: 167ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(239), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 153ms
+timestamp_module: 154ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(242), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 154ms
+timestamp_module: 174ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(237), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 124ms
+timestamp_module: 167ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(242), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 126ms
+timestamp_module: 154ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(240), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 281ms
+timestamp_module: 529ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(239), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 183ms
+timestamp_module: 211ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(238), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 108ms
+timestamp_module: 171ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(238), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+timestamp_clone: 0ms
+timestamp_wasi: 223ms
+timestamp_module: 255ms
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(372), "prime": Number(373587911)})))
+Removing container with id 9f50efed-d749-4ca0-8f42-2d176451c9d4
+
+
+-------------------- cold start --------------------
+Listening on: 127.0.0.1:9000
+/init prime
+Initializing container with id ff4c6108-d652-4d57-a0a6-0901dc91bf9f
+base64 decoding took 0 ms
+timestamp_overhead: 680
+timestamp_init: 1281
+/run /guest/prime
+Running container with id ff4c6108-d652-4d57-a0a6-0901dc91bf9f
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(251), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id ff4c6108-d652-4d57-a0a6-0901dc91bf9f
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(247), "prime": Number(373587911)})))
+Removing container with id ff4c6108-d652-4d57-a0a6-0901dc91bf9f
+/init prime
+Initializing container with id 389c966d-8860-4cfa-bd9c-d9520c717f91
+base64 decoding took 0 ms
+timestamp_overhead: 709
+timestamp_init: 2044
+/run /guest/prime
+Running container with id 389c966d-8860-4cfa-bd9c-d9520c717f91
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(246), "prime": Number(373587911)})))
+Removing container with id 389c966d-8860-4cfa-bd9c-d9520c717f91
+/init prime
+Initializing container with id 8c99734c-349f-4226-8d46-4866d3b8d7a6
+base64 decoding took 0 ms
+timestamp_overhead: 449
+timestamp_init: 1011
+/run /guest/prime
+Running container with id 8c99734c-349f-4226-8d46-4866d3b8d7a6
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(252), "prime": Number(373587911)})))
+/run /guest/prime
+Running container with id 8c99734c-349f-4226-8d46-4866d3b8d7a6
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(251), "prime": Number(373587911)})))
+Removing container with id 8c99734c-349f-4226-8d46-4866d3b8d7a6
+/init prime
+Initializing container with id a2503ec4-fb52-43d9-bfa4-ad0ed940d966
+base64 decoding took 0 ms
+timestamp_overhead: 619
+timestamp_init: 1099
+/run /guest/prime
+Running container with id a2503ec4-fb52-43d9-bfa4-ad0ed940d966
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(463), "prime": Number(373587911)})))
+Removing container with id a2503ec4-fb52-43d9-bfa4-ad0ed940d966
+/init prime
+Initializing container with id af8fefdd-9455-4d4b-962a-5a4596e6c7cc
+base64 decoding took 0 ms
+timestamp_overhead: 869
+timestamp_init: 1890
+/run /guest/prime
+Running container with id af8fefdd-9455-4d4b-962a-5a4596e6c7cc
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(337), "prime": Number(373587911)})))
+/init net
+Initializing container with id 3dac63b9-b42f-479b-8ca9-432b9c26fd36
+base64 decoding took 0 ms
+timestamp_overhead: 353
+timestamp_init: 798
+/run /guest/net
+Running container with id 3dac63b9-b42f-479b-8ca9-432b9c26fd36
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+Removing container with id af8fefdd-9455-4d4b-962a-5a4596e6c7cc
+Removing container with id 3dac63b9-b42f-479b-8ca9-432b9c26fd36
+/init net
+Initializing container with id f05d3246-1957-4ff1-8424-f4999afaf4c2
+base64 decoding took 0 ms
+timestamp_overhead: 325
+timestamp_init: 802
+/run /guest/net
+Running container with id f05d3246-1957-4ff1-8424-f4999afaf4c2
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+Removing container with id f05d3246-1957-4ff1-8424-f4999afaf4c2
+/init net
+Initializing container with id c680eee1-1180-457b-9c9e-7c13bd88e755
+base64 decoding took 0 ms
+timestamp_overhead: 383
+timestamp_init: 782
+/run /guest/net
+Running container with id c680eee1-1180-457b-9c9e-7c13bd88e755
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+Removing container with id c680eee1-1180-457b-9c9e-7c13bd88e755
+/init net
+Initializing container with id 008c433a-e1d1-4d0b-9ccc-b07bf62b6cf2
+base64 decoding took 0 ms
+timestamp_overhead: 553
+timestamp_init: 1198
+/run /guest/net
+Running container with id 008c433a-e1d1-4d0b-9ccc-b07bf62b6cf2
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+Removing container with id 008c433a-e1d1-4d0b-9ccc-b07bf62b6cf2
+/init net
+Initializing container with id 98e0e10c-bea7-4aa9-843c-d1b2585dbd75
+base64 decoding took 0 ms
+timestamp_overhead: 371
+timestamp_init: 822
+/run /guest/net
+Running container with id 98e0e10c-bea7-4aa9-843c-d1b2585dbd75
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+/init hello
+Initializing container with id 878e3d26-0b00-40bc-867c-113f3499fe1c
+base64 decoding took 0 ms
+timestamp_overhead: 444
+timestamp_init: 1100
+/run /guest/hello
+Running container with id 878e3d26-0b00-40bc-867c-113f3499fe1c
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+Removing container with id 98e0e10c-bea7-4aa9-843c-d1b2585dbd75
+Removing container with id 878e3d26-0b00-40bc-867c-113f3499fe1c
+/init hello
+Initializing container with id cf1a6528-c1fd-4f6b-a850-83e79a573dd7
+base64 decoding took 0 ms
+timestamp_overhead: 448
+timestamp_init: 1073
+/run /guest/hello
+Running container with id cf1a6528-c1fd-4f6b-a850-83e79a573dd7
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+Removing container with id cf1a6528-c1fd-4f6b-a850-83e79a573dd7
+/init hello
+Initializing container with id 8021774e-be20-41af-aa33-3d67b42861aa
+base64 decoding took 0 ms
+timestamp_overhead: 446
+timestamp_init: 1084
+/run /guest/hello
+Running container with id 8021774e-be20-41af-aa33-3d67b42861aa
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+Removing container with id 8021774e-be20-41af-aa33-3d67b42861aa
+/init hello
+Initializing container with id fcd478e5-0f2e-49c9-91fe-e143a51e11ab
+base64 decoding took 0 ms
+timestamp_overhead: 676
+timestamp_init: 1918
+/run /guest/hello
+Running container with id fcd478e5-0f2e-49c9-91fe-e143a51e11ab
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+Removing container with id fcd478e5-0f2e-49c9-91fe-e143a51e11ab
+/init hello
+Initializing container with id a97b55b7-f907-4f38-8899-d606954d0616
+base64 decoding took 0 ms
+timestamp_overhead: 425
+timestamp_init: 1084
+/run /guest/hello
+Running container with id a97b55b7-f907-4f38-8899-d606954d0616
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+/init hash
+Initializing container with id b0f82ccf-8713-4c2b-9454-a7767acb7f06
+base64 decoding took 0 ms
+timestamp_overhead: 526
+timestamp_init: 910
+/run /guest/hash
+Running container with id b0f82ccf-8713-4c2b-9454-a7767acb7f06
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+Removing container with id a97b55b7-f907-4f38-8899-d606954d0616
+Removing container with id b0f82ccf-8713-4c2b-9454-a7767acb7f06
+/init hash
+Initializing container with id 82e76a58-cfa8-4228-9197-cf8ef7bdb7fa
+base64 decoding took 0 ms
+timestamp_overhead: 368
+timestamp_init: 886
+/run /guest/hash
+Running container with id 82e76a58-cfa8-4228-9197-cf8ef7bdb7fa
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+Removing container with id 82e76a58-cfa8-4228-9197-cf8ef7bdb7fa
+/init hash
+Initializing container with id 6879bd54-7edc-47ae-bc6b-87d4914edda5
+base64 decoding took 0 ms
+timestamp_overhead: 557
+timestamp_init: 1580
+/run /guest/hash
+Running container with id 6879bd54-7edc-47ae-bc6b-87d4914edda5
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+Removing container with id 6879bd54-7edc-47ae-bc6b-87d4914edda5
+/init hash
+Initializing container with id 5efeac3e-08d7-4791-bc38-02a61b542c55
+base64 decoding took 0 ms
+timestamp_overhead: 591
+timestamp_init: 1606
+/run /guest/hash
+Running container with id 5efeac3e-08d7-4791-bc38-02a61b542c55
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+Removing container with id 5efeac3e-08d7-4791-bc38-02a61b542c55
+/init hash
+Initializing container with id c004d958-96b4-4bb9-ab9b-0c09b707fbc5
+base64 decoding took 0 ms
+timestamp_overhead: 326
+timestamp_init: 886
+/run /guest/hash
+Running container with id c004d958-96b4-4bb9-ab9b-0c09b707fbc5
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+Removing container with id c004d958-96b4-4bb9-ab9b-0c09b707fbc5
+/init sleep
+Initializing container with id 88e3405c-9026-4ecf-abbc-cdbf26ffd26b
+base64 decoding took 0 ms
+timestamp_overhead: 429
+timestamp_init: 933
+/run /guest/sleep
+Running container with id 88e3405c-9026-4ecf-abbc-cdbf26ffd26b
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(5001)})))
+Removing container with id 88e3405c-9026-4ecf-abbc-cdbf26ffd26b
+/init sleep
+Initializing container with id dc2c270b-20c4-4881-92f2-56d04442f217
+base64 decoding took 0 ms
+timestamp_overhead: 340
+timestamp_init: 875
+/run /guest/sleep
+Running container with id dc2c270b-20c4-4881-92f2-56d04442f217
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(1000)})))
+Removing container with id dc2c270b-20c4-4881-92f2-56d04442f217
+/init sleep
+Initializing container with id b2bb17bc-e5b1-4126-89c7-f75ee202ff63
+base64 decoding took 0 ms
+timestamp_overhead: 401
+timestamp_init: 923
+/run /guest/sleep
+Running container with id b2bb17bc-e5b1-4126-89c7-f75ee202ff63
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(1001)})))
+Removing container with id b2bb17bc-e5b1-4126-89c7-f75ee202ff63
+/init sleep
+Initializing container with id 1fe344e2-0266-4553-bd44-8b30222b62c9
+base64 decoding took 0 ms
+timestamp_overhead: 328
+timestamp_init: 865
+/run /guest/sleep
+Running container with id 1fe344e2-0266-4553-bd44-8b30222b62c9
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(1001)})))
+Removing container with id 1fe344e2-0266-4553-bd44-8b30222b62c9
+/init sleep
+Initializing container with id 0077574f-4321-4be0-bfd4-bee2fb3cd901
+base64 decoding took 0 ms
+timestamp_overhead: 415
+timestamp_init: 880
+/run /guest/sleep
+Running container with id 0077574f-4321-4be0-bfd4-bee2fb3cd901
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(1001)})))
+Removing container with id 0077574f-4321-4be0-bfd4-bee2fb3cd901
+
+
+-------------------- cold start Part 2--------------------/init sleep
+Initializing container with id 07f81895-9021-4488-9474-1c6745e2a9aa
+base64 decoding took 0 ms
+timestamp_overhead: 426
+timestamp_init: 920
+/run /guest/sleep
+Running container with id 07f81895-9021-4488-9474-1c6745e2a9aa
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(1001)})))
+Removing container with id 07f81895-9021-4488-9474-1c6745e2a9aa
+/init sleep
+Initializing container with id 5f6595b9-92bd-495a-87e7-87f496bca686
+base64 decoding took 0 ms
+timestamp_overhead: 369
+timestamp_init: 884
+/run /guest/sleep
+Running container with id 5f6595b9-92bd-495a-87e7-87f496bca686
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(1001)})))
+Removing container with id 5f6595b9-92bd-495a-87e7-87f496bca686
+/init sleep
+Initializing container with id 4abb3595-2a4f-4e7b-8b90-178e955413b5
+base64 decoding took 0 ms
+timestamp_overhead: 350
+timestamp_init: 868
+/run /guest/sleep
+Running container with id 4abb3595-2a4f-4e7b-8b90-178e955413b5
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(1000)})))
+Removing container with id 4abb3595-2a4f-4e7b-8b90-178e955413b5
+/init sleep
+Initializing container with id feb7f203-b6d7-4d1c-af33-d520edd919a8
+base64 decoding took 0 ms
+timestamp_overhead: 395
+timestamp_init: 898
+/run /guest/sleep
+Running container with id feb7f203-b6d7-4d1c-af33-d520edd919a8
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(1000)})))
+Removing container with id feb7f203-b6d7-4d1c-af33-d520edd919a8
+/init sleep
+Initializing container with id a48cdc26-5c99-4782-8994-b13f58aa3311
+base64 decoding took 0 ms
+timestamp_overhead: 442
+timestamp_init: 884
+/run /guest/sleep
+Running container with id a48cdc26-5c99-4782-8994-b13f58aa3311
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(1001)})))
+
+
+Removing container with id a48cdc26-5c99-4782-8994-b13f58aa3311
+/init hash
+Initializing container with id 66a76502-ec56-4a53-a79d-fd28f5a6aa2d
+base64 decoding took 0 ms
+timestamp_overhead: 374
+timestamp_init: 861
+/run /guest/hash
+Running container with id 66a76502-ec56-4a53-a79d-fd28f5a6aa2d
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+Removing container with id 66a76502-ec56-4a53-a79d-fd28f5a6aa2d
+/init hash
+Initializing container with id cdc2ff7e-3d40-41d2-9240-66df509e14fd
+base64 decoding took 0 ms
+timestamp_overhead: 503
+timestamp_init: 840
+/run /guest/hash
+Running container with id cdc2ff7e-3d40-41d2-9240-66df509e14fd
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+Removing container with id cdc2ff7e-3d40-41d2-9240-66df509e14fd
+/init hash
+Initializing container with id 7041b884-1567-462d-9383-f7af2427cf64
+base64 decoding took 0 ms
+timestamp_overhead: 486
+timestamp_init: 841
+/run /guest/hash
+Running container with id 7041b884-1567-462d-9383-f7af2427cf64
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+Removing container with id 7041b884-1567-462d-9383-f7af2427cf64
+/init hash
+Initializing container with id 369c3fb8-1a43-48c5-9b07-0f33b7797553
+base64 decoding took 0 ms
+timestamp_overhead: 403
+timestamp_init: 830
+/run /guest/hash
+Running container with id 369c3fb8-1a43-48c5-9b07-0f33b7797553
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+Removing container with id 369c3fb8-1a43-48c5-9b07-0f33b7797553
+/init hash
+Initializing container with id b63dcca7-6555-49b9-9c71-5adcdab8b59a
+base64 decoding took 0 ms
+timestamp_overhead: 401
+timestamp_init: 849
+/run /guest/hash
+Running container with id b63dcca7-6555-49b9-9c71-5adcdab8b59a
+Wasm Execution returned Ok(Ok(Object({"hash": Array([Number(130), Number(205), Number(21), Number(162), Number(99), Number(102), Number(188), Number(226), Number(223), Number(79), Number(134), Number(242), Number(167), Number(106), Number(65), Number(249), Number(98), Number(221), Number(135), Number(46), Number(130), Number(217), Number(183), Number(50), Number(60), Number(205), Number(84), Number(46), Number(58), Number(172), Number(20), Number(158)])})))
+
+
+Removing container with id b63dcca7-6555-49b9-9c71-5adcdab8b59a
+/init hello
+Initializing container with id 3b25c9e3-e2e6-4c3f-8727-a1ba3dceed95
+base64 decoding took 0 ms
+timestamp_overhead: 589
+timestamp_init: 1077
+/run /guest/hello
+Running container with id 3b25c9e3-e2e6-4c3f-8727-a1ba3dceed95
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+Removing container with id 3b25c9e3-e2e6-4c3f-8727-a1ba3dceed95
+/init hello
+Initializing container with id 23cbca57-2215-4f5f-aa4b-823be964e2ec
+base64 decoding took 0 ms
+timestamp_overhead: 492
+timestamp_init: 1107
+/run /guest/hello
+Running container with id 23cbca57-2215-4f5f-aa4b-823be964e2ec
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+Removing container with id 23cbca57-2215-4f5f-aa4b-823be964e2ec
+/init hello
+Initializing container with id dbd454d8-c844-4229-a044-4e448cf90759
+base64 decoding took 0 ms
+timestamp_overhead: 394
+timestamp_init: 1078
+/run /guest/hello
+Running container with id dbd454d8-c844-4229-a044-4e448cf90759
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+Removing container with id dbd454d8-c844-4229-a044-4e448cf90759
+/init hello
+Initializing container with id 8c459f64-e015-40d4-844a-53cd1ea0d5c7
+base64 decoding took 0 ms
+timestamp_overhead: 560
+timestamp_init: 1118
+/run /guest/hello
+Running container with id 8c459f64-e015-40d4-844a-53cd1ea0d5c7
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+Removing container with id 8c459f64-e015-40d4-844a-53cd1ea0d5c7
+/init hello
+Initializing container with id 06c110b2-8f10-4a5c-876a-2dfed4845e57
+base64 decoding took 0 ms
+timestamp_overhead: 520
+timestamp_init: 1130
+/run /guest/hello
+Running container with id 06c110b2-8f10-4a5c-876a-2dfed4845e57
+Wasm Execution returned Ok(Ok(Object({"result": String("Hello, \"there\"")})))
+Removing container with id 06c110b2-8f10-4a5c-876a-2dfed4845e57
+/init net
+Initializing container with id 86297025-2f43-417c-bd43-03219140b77d
+base64 decoding took 0 ms
+timestamp_overhead: 318
+timestamp_init: 844
+/run /guest/net
+Running container with id 86297025-2f43-417c-bd43-03219140b77d
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+Removing container with id 86297025-2f43-417c-bd43-03219140b77d
+/init net
+Initializing container with id 9c8d6ac9-732a-412c-a029-037a787cd5b0
+base64 decoding took 0 ms
+timestamp_overhead: 364
+timestamp_init: 846
+/run /guest/net
+Running container with id 9c8d6ac9-732a-412c-a029-037a787cd5b0
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+Removing container with id 9c8d6ac9-732a-412c-a029-037a787cd5b0
+/init net
+Initializing container with id 48b9f7e4-30f0-4e81-88f0-c7727c49b005
+base64 decoding took 0 ms
+timestamp_overhead: 329
+timestamp_init: 818
+/run /guest/net
+Running container with id 48b9f7e4-30f0-4e81-88f0-c7727c49b005
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+Removing container with id 48b9f7e4-30f0-4e81-88f0-c7727c49b005
+/init net
+Initializing container with id ae165da4-216e-43fa-9e58-eac3e4089040
+base64 decoding took 0 ms
+timestamp_overhead: 335
+timestamp_init: 1190
+/run /guest/net
+Running container with id ae165da4-216e-43fa-9e58-eac3e4089040
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+Removing container with id ae165da4-216e-43fa-9e58-eac3e4089040
+/init net
+Initializing container with id 2822cfda-f3ec-488c-8ade-47b4f99e2a91
+base64 decoding took 0 ms
+timestamp_overhead: 417
+timestamp_init: 1104
+/run /guest/net
+Running container with id 2822cfda-f3ec-488c-8ade-47b4f99e2a91
+Wasm Execution returned Ok(Ok(Object({"request_time": Number(300)})))
+Removing container with id 2822cfda-f3ec-488c-8ade-47b4f99e2a91
+/init prime
+Initializing container with id cbd2c58c-2484-4aaa-a9d0-9f1737de743c
+base64 decoding took 0 ms
+timestamp_overhead: 448
+timestamp_init: 1056
+/run /guest/prime
+Running container with id cbd2c58c-2484-4aaa-a9d0-9f1737de743c
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(353), "prime": Number(373587911)})))
+Removing container with id cbd2c58c-2484-4aaa-a9d0-9f1737de743c
+/init prime
+Initializing container with id fbd9ac48-d0b7-463f-8b80-3a9927efa5e2
+base64 decoding took 0 ms
+timestamp_overhead: 444
+timestamp_init: 1044
+/run /guest/prime
+Running container with id fbd9ac48-d0b7-463f-8b80-3a9927efa5e2
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(463), "prime": Number(373587911)})))
+Removing container with id fbd9ac48-d0b7-463f-8b80-3a9927efa5e2
+/init prime
+Initializing container with id 1b997342-b507-4203-a6e7-2ab28c89ebfe
+base64 decoding took 0 ms
+timestamp_overhead: 418
+timestamp_init: 1069
+/run /guest/prime
+Running container with id 1b997342-b507-4203-a6e7-2ab28c89ebfe
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(244), "prime": Number(373587911)})))
+Removing container with id 1b997342-b507-4203-a6e7-2ab28c89ebfe
+/init prime
+Initializing container with id 29ebe0bb-5aee-4705-891b-55736c80c088
+base64 decoding took 0 ms
+timestamp_overhead: 419
+timestamp_init: 1042
+/run /guest/prime
+Running container with id 29ebe0bb-5aee-4705-891b-55736c80c088
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(247), "prime": Number(373587911)})))
+Removing container with id 29ebe0bb-5aee-4705-891b-55736c80c088
+/init prime
+Initializing container with id 10dc257e-0447-46fe-b743-b5a761011ed6
+base64 decoding took 0 ms
+timestamp_overhead: 431
+timestamp_init: 1080
+/run /guest/prime
+Running container with id 10dc257e-0447-46fe-b743-b5a761011ed6
+Wasm Execution returned Ok(Ok(Object({"calc_time": Number(243), "prime": Number(373587911)})))
+Removing container with id 10dc257e-0447-46fe-b743-b5a761011ed6

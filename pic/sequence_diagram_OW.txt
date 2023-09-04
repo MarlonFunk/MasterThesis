@@ -1,0 +1,46 @@
+
+actor Client
+
+participant NGINX
+participant Controller
+participant CouchDB
+participant LoadBalancer
+participant Kafka
+participant Invoker
+participant Action Controller
+
+activate Client
+Client->NGINX:Request
+activate NGINX
+NGINX->Controller:Request
+activate Controller
+activate CouchDB
+Controller->CouchDB:Authentication
+Controller->CouchDB:Authorization
+Controller->CouchDB:Parameter
+deactivate CouchDB
+activate LoadBalancer
+Controller->LoadBalancer:Message
+deactivate Controller
+LoadBalancer->Kafka:Message
+activate Kafka
+Kafka->Invoker:Message
+deactivate Kafka
+activate Invoker
+Invoker->Action Controller:Message
+NGINX<--LoadBalancer:ActivationID
+deactivate LoadBalancer
+Client<--NGINX: ActivationID
+deactivate NGINX
+deactivate Client
+Invoker<--Action Controller:Result
+deactivate Invoker
+activate CouchDB
+CouchDB<--Invoker:Result
+activate Client
+Client<--CouchDB:ActivationID
+Client-->CouchDB:Result
+deactivate Client
+deactivate CouchDB
+
+
